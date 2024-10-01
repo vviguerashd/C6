@@ -13,7 +13,7 @@ body{
 .tarjeta{
     margin-top: 20px;
     box-sizing: border-box;
-    width: 306px;
+    width: 316px;
     position: relative;
 }
 img{
@@ -29,10 +29,10 @@ img{
 }
 #boton_rojo{
     position: relative;
-    top: 14px;
+    top: 13px;
     left: 5px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 100%;
     background-color: #af5453;
 }
@@ -44,35 +44,52 @@ img{
     font-size: 12px;
 }
 .texto{
-    padding: 0 10px;
+    /* la position relative la ajusté a -4px porque había un espacio raro entre la imagen y el texto */
+    position: relative;
+    top: -4px;
+    padding: 0 5px;
     color: white;
     display: flex;     
-    width: 100%;
-    height: 80px;  
+    height: 70px;  
     justify-content: space-between;
-    background-color: #67c1f5;
+    align-items: center;
+    background-color: #b2ddf5;
 }
 
 .izq{
-    margin-top: 15px;
     color: #283846;
-    width:40%;
-    background-color: #67c1f5;
+    background-color: #b2ddf5;
 
 }
 
 .der{
-    width:40%;
+    height: 40px;
     display: flex;       
-    background-color: #67c1f5;
+    background-color: #3a4c5a;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+
     
-    p:first-child{
+    .descuento{
         color: #beee11;
         font-size:35px;
+        padding-left:5px ;
+        font-weight: 600;
         background-color:#4c6b22;
     }
-    p:last-child{
+    .precios div:first-child{
+        padding-left:2px ;
+        font-size: 12px;
+        text-align: right;
+        color: #738895;
+        text-decoration: line-through;
+        background-color:#3a4c5a;
+    }
+    .precios div:last-child{
+        text-align: right;
+        padding-left:2px ;
+        font-size: 16px;
         color: #beee11;
         background-color:#3a4c5a;
     }
