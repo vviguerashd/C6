@@ -5,13 +5,103 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+.contenido{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: white;
+    align-items: start;
+    margin-top: 40px;
+}
+.ofertas_especiales{
+    margin-top: 20px;
+    display: flex;
+}
+.ofertas_especiales_izq{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.ofertas_especiales_der{
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.tarjeta{
-    margin-top: 20px;
+.ofertas_especiales .ofertas_especiales_izq .tarjeta_izq{
+    margin-left: 75px;
+    box-sizing: border-box;
+    width: 316px;
+    position: relative;    
+}
+.texto_izq{
+    position: relative;
+    top: -4px;
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/home/background_spotlight.jpg);
+    background-size: cover;
+    height: 120px;
+}
+.texto_izq .izq{
+    /* la position relative la ajusté a -4px porque había un espacio raro entre la imagen y el texto */
+    position: relative;
+    top: 5px;
+    padding-left: 16px;
+    color: rgb(255, 255, 255);
+    height: 70px;  
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #beee1100;
+}
+
+.texto_izq .der{
+    height: 40px;
+    width: 50%;
+    display: flex; 
+    margin-left: 20px;
+    margin-bottom: 5px;      
+    background-color: #3a4c5a;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+
+    
+    .descuento{
+        color: #beee11;
+        font-size:35px;
+        padding-left:5px ;
+        font-weight: 600;
+        background-color:#4c6b22;
+    }
+    .precios div:first-child{
+        padding-left:2px ;
+        font-size: 12px;
+        text-align: right;
+        color: #738895;
+        text-decoration: line-through;
+        background-color:#3a4c5a;
+    }
+    .precios div:last-child{
+        text-align: right;
+        padding-left:2px ;
+        font-size: 16px;
+        color: #beee11;
+        background-color:#3a4c5a;
+    }
+}
+.texto_izq .izq p:first-child{
+    background-color: #beee1100;
+}
+
+.texto_izq .izq p:last-child{
+    margin-top: 12px;
+    background-color: #beee1100;
+    color: #a4d5ef;
+    font-size: 15px;
+}
+.ofertas_especiales_der .tarjeta{
+    margin-top: 10px;
+    margin-left: 15px;
     box-sizing: border-box;
     width: 316px;
     position: relative;
